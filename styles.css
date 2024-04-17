@@ -1,0 +1,97 @@
+body {
+    font-family: 'Minecraft', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: #ccc;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+.converter {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 40px;
+    text-align: right;
+    margin-right: 15px;
+    color: #aaa;
+}
+
+input {
+    padding: 7px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #222;
+    color: #ddd;
+    width: 60px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #45a049;
+}
+
+button {
+    padding: 12px 25px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 15px;
+}
+
+/* Skeleton design */
+.skeleton {
+    position: absolute;
+    opacity: 0.2;
+    animation: skeletonMove 20s infinite linear;
+}
+
+@keyframes skeletonMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-2000px); }
+}
+
+.overworld {
+    border-top: 5px solid #4CAF50;
+}
+
+.nether {
+    border-top: 5px solid #FF5733;
+}
+
+/* End theme */
+.end {
+    border-top: 5px solid #AA00FF;
+}
+
+.end h2, .end button {
+    color: #AA00FF;
+}
+
+.end button:hover {
+    background-color: #8B008B;
+}
