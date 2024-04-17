@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft World Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Minecraft World Converter</h1>
+    
+    <div class="converter overworld">
+        <h2>Overworld Coordinates</h2>
+        <div class="input-group">
+            <label for="overworldX">X:</label>
+            <input type="number" id="overworldX" placeholder="X">
+        </div>
+        <div class="input-group">
+            <label for="overworldY">Y:</label>
+            <input type="number" id="overworldY" placeholder="Y">
+        </div>
+        <div class="input-group">
+            <label for="overworldZ">Z:</label>
+            <input type="number" id="overworldZ" placeholder="Z">
+        </div>
+        <button onclick="convertToNether()">Convert to Nether</button>
+        <p id="netherCoords"></p>
+    </div>
+
+    <div class="converter nether">
+        <h2>Nether Coordinates</h2>
+        <div class="input-group">
+            <label for="netherX">X:</label>
+            <input type="number" id="netherX" placeholder="X">
+        </div>
+        <div class="input-group">
+            <label for="netherY">Y:</label>
+            <input type="number" id="netherY" placeholder="Y">
+        </div>
+        <div class="input-group">
+            <label for="netherZ">Z:</label>
+            <input type="number" id="netherZ" placeholder="Z">
+        </div>
+        <button onclick="convertToOverworld()">Convert to Overworld</button>
+        <p id="overworldCoords"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
